@@ -11,4 +11,7 @@ export class AppComponent {
   itemSelected(item: string) {
     this.selected === item ? this.selected = '' : this.selected = item 
   }
+  itemAdded() {
+    this.selected = ''
+  }
 }

@@ -1,5 +1,5 @@
 <div class="row">
   <div class="col-sm-12 text-center" *ngIf="!(item === '')">
-    Add {{item}} to cart
+    <button class="btn btn-primary" (click)="itemAdded.emit()">Add {{item}} to cart </button>
   </div>
 </div>

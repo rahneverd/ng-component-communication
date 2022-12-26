@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-add-to-cart',
@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AddToCartComponent implements OnInit {
 
   @Input() item : string
+  @Output() itemAdded = new EventEmitter() 
   constructor() { }
 
   ngOnInit(): void {
