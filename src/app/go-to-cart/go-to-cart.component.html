@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-sm-12 text-center">
-    Got to cart
+  <div class="col-sm-12 text-center" *ngIf="!(item === '')">
+    {{item}} added into the cart. Go to cart
   </div>
 </div>

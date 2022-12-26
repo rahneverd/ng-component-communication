@@ -1,10 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { GoToCartComponent } from './go-to-cart/go-to-cart.component';
+import { ItemToCartService } from './item-to-cart.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { GoToCartComponent } from './go-to-cart/go-to-cart.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ItemToCartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
