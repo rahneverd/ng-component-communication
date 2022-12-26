@@ -14,7 +14,8 @@ export class GoToCartComponent implements OnInit, OnChanges {
   }
   
   ngOnInit(): void {
-    this._item.finalItem.subscribe(item => this.item = item)
+    // this._item.finalItem.subscribe(item => this.item = item)
+    this._item.item.subscribe(item => this.item = item)
   }
 
   ngOnChanges() {
